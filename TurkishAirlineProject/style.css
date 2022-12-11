@@ -1,0 +1,504 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+:root {
+    --main-color :#f50057 ;
+    --text-color : white;
+    --contact-color : #0e2433;
+}
+header{
+    position: relative;
+    max-width: 1960px;
+    margin:0 auto;
+}
+
+.header img{
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slogan {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: translateX(-10%);
+}
+
+.slogan h1 {
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+.slogan span {
+    color:var(--main-color) ;
+}
+
+.slogan p {
+    margin-top: 30px;
+    margin-left: 10px;
+    color: var(--main-color);
+    text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.learn-register {
+    margin-top: 40px;
+    display: flex;
+}
+
+.learn-register button {
+    border: solid 3px var(--main-color);
+    outline: none;
+    background-color:transparent;
+    color: white;
+    font-weight:900;
+    padding: 20px;
+    border-radius: 50px;
+    width: 170px;
+    margin-left: 10px;
+    transition: 0.5s;
+    font-size: 20px;
+}
+
+.learn-register button:hover {
+    background-color: var(--main-color);
+}
+
+/* Body Starts */
+.body-section {
+    display: flex;
+    margin: 0 50px;
+    color: var(--text-color);
+}
+
+.card {
+    width: 33.33%;
+    background-color: gold;
+    display: flex;
+    font-size: 20px;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    z-index: 1;
+    transition: 1s;
+}
+
+.bodyImg{
+    width: 90%;
+}
+.bodyImg img {
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+
+.card .bodyText {
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    background-color: var(--main-color);
+    transition: 1s;
+}
+
+.card .bodyText2 {
+    writing-mode: vertical-rl;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    background-color: var(--main-color);
+    transition: 1s;
+}
+
+.activeCard {
+    background-image: url(./img/baa_training_vietnam_a320neo.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.activeCard .bodyText1 {
+    background-color: #f50057;
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bodyText1 h4 {
+    font-size: 35px;
+    margin: 10px;
+}
+
+.bodyText1 hr {
+    width: 60%;
+    color: white;
+    border: 1px solid;
+    margin-left: 10px;
+}
+
+.bodyText1 p{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin: 10px;
+}
+
+.bodyText1 button {
+    border: solid 2px var(--text-color);
+    outline: none;
+    background-color:transparent;
+    color: white;
+    font-weight:900;
+    padding: 10px;
+    border-radius: 50px;
+    transition: 0.5s;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    z-index:2; 
+    box-shadow: black 0px 7px 29px 0px;
+}
+
+.bodyText1 button:hover {
+    background-color: var(--text-color);
+    color: #f50057;
+}
+
+/* icon section starts */
+
+.iconGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    background-color: #0e2433;
+    height: 460px;
+}
+
+.icons {
+    max-width: 400px;
+}
+.icons h1 {
+    font-size: 3rem;
+    color: lightslategray;
+    position: relative;
+    text-align: center;
+}
+
+.iconText {
+    position: relative;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid #f50057;
+    color: white;
+}
+
+.iconText img  {
+    width: 10rem;
+}
+
+.iconText small {
+    font-size: 15px;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.iconText b {
+    font-size: 1.5rem;
+}
+
+/* contact section starts */
+.contactText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 10px auto;
+    text-transform: uppercase;
+    padding: 30px;
+}
+
+.contactText h1 {
+    margin-bottom: 3rem;
+    color: var(--contact-color) ;
+}
+
+.contactText h6 {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 300;
+    color: var(--contact-color);
+}
+
+.contactBtn-group button {
+    border: solid 3px var(--main-color);
+    outline: none;
+    background-color:transparent;
+    color: var(--main-color);
+    font-weight:900;
+    padding: 15px;
+    border-radius: 50px;
+    width: 130px;
+    margin-left: 10px;
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+.contactBtn-group button:hover {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+/* footer starts */
+
+footer {
+    display: flex;
+    margin: 1rem auto;
+    justify-content: center;
+    align-items:center ;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    margin-bottom: 0%;
+}
+
+.phone, .mail {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    word-spacing: 1rem;
+    font-size: 1.5rem;
+}
+
+footer h5 {
+    padding: 0 1rem;
+}
+
+@media (max-width:1680px) {
+    .slogan h1 {
+        font-size: 4rem;
+    }
+    .slogan {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        transform: translateX(-5%);
+    }
+}
+
+@media (max-width:1165px) {
+    .slogan h1 {
+        font-size: 3rem;
+    }
+
+    .slogan button {
+        padding: 17px;
+        width: 160px;
+        font-size: 1rem;
+    }
+
+    .body-section {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .bodyText1 button {
+        padding: 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width:990px) {
+    .slogan h1 {
+        font-size: 2rem;
+    }
+
+    .slogan button {
+        padding: 13px;
+        width: 130px;
+        font-size: 1rem;
+    }
+    
+    .learn-register {
+        margin-top: 30px;
+    }
+
+    .card {
+       width: 300px;
+       height: 200px;
+       margin: 0 auto;
+    }
+
+    .bodyText1 h4 {
+        font-size: 18px;
+        margin: 5px;
+    }
+    
+    .bodyText1 p{
+        font-size: 13px;
+        margin: 5px;
+    }
+
+    .bodyText1 button {
+        padding: 3px;
+        font-size: 5px;
+    }
+
+    .icons h1 {
+        font-size: 2rem;
+    }
+
+    .icons img {
+        width: 5rem;
+    }
+
+    .icons b {
+        font-size: 1rem;
+    }
+
+    .iconGroup {
+        height: 400px;
+    }
+}
+
+@media (max-width:830px) {
+    .slogan h1 {
+        font-size: 1.5rem;
+    }
+
+    .slogan button {
+        padding: 5px;
+        width: 90px;
+        font-size: 0.5rem;
+        border-width: 1.8px;
+    }
+
+    .slogan p {
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    .learn-register {
+        margin-top: 20px;
+    }
+
+    .bodyText1 h4 {
+        font-size: 15px;
+        margin: 3px;
+    }
+    
+    .bodyText1 p{
+        font-size: 10px;
+        margin: 3px;
+    }
+
+    .contactText h1 {
+        margin-bottom: 2rem;
+    }
+    
+    .contactText h6 {
+        margin-bottom: 1rem;
+    }
+    
+    .contactBtn-group button {
+        border: solid 2px var(--main-color);
+        padding: 12px;
+        width: 100px;
+        margin-left: 10px;
+        font-size: 10px;
+    }
+    footer {
+        justify-content: space-around;
+        align-items:center ;
+    }
+}
+
+@media (max-width:600px) {
+    .slogan {
+        display: flex;
+        align-items: center;
+    }
+
+    .slogan button {
+        padding: 4px;
+        width: 80px;
+        font-size: 0.5rem;
+    }
+
+    .learn-register {
+        margin-top: 10px;
+    }
+
+    .card {
+        width: 200px;
+        height: 100px;
+        margin: 0 auto;
+    }
+
+    .card p {
+        display: none;
+    }
+
+    .icons h1 {
+        font-size: 1rem;
+    }
+
+    .icons img {
+        width: 3rem;
+    }
+
+    .icons b {
+        font-size: 0.5rem;
+    }
+
+    .iconText small {
+        font-size: 10px;
+        padding: 0 2rem;
+    }
+
+    .iconGroup {
+        height: 300px;
+        overflow-x:scroll;
+    }
+    
+    .contactText h1 {
+        margin-bottom: 2rem;
+    }
+    
+    .contactText h6 {
+        margin-bottom: 1rem;
+    }
+    
+    .contactBtn-group button {
+        border: solid 2px var(--main-color);
+        padding: 10px;
+        width: 100px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width:320px) {
+    .slogan h1 {
+        font-size: 1.2rem;
+    }
+
+    .slogan button {
+        border: right 1.5px; ;
+    }
+}
